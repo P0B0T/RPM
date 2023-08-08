@@ -1,0 +1,60 @@
+﻿<Window
+    x:Class="Pract18.FunctionalWindows.Viewing"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Pract18.FunctionalWindows"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Просмотр записи"
+    Width="347"
+    Height="470"
+    Foreground="White"
+    Loaded="Window_Loaded"
+    ResizeMode="NoResize"
+    Style="{StaticResource WindowBackground}"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+
+    <StackPanel>
+
+        <Label Content="Название гостиницы:" />
+
+        <TextBox x:Name="Hotel_TextBox" IsReadOnly="True" />
+
+        <Label Content="Номер комнаты спортсмена:" />
+
+        <TextBox x:Name="RoomNumber_TextBox" IsReadOnly="True" />
+
+        <Label Content="Количество мест в этой комнате:" />
+
+        <TextBox x:Name="NumberOfSeats_TextBox" IsReadOnly="True" />
+
+        <Label Content="ФИО спортсмена:" />
+
+        <TextBox x:Name="AthleteSFullName_TextBox" IsReadOnly="True" />
+
+        <Label Content="Возрастная группа спортсмена:" />
+
+        <TextBox x:Name="AgeGroup_TextBox" IsReadOnly="True" />
+
+        <Label Content="Город:" />
+
+        <TextBox x:Name="City_TextBox" IsReadOnly="True" />
+
+        <Label Content="Вид спорта:" />
+
+        <TextBox x:Name="SportTipe_TextBox" IsReadOnly="True" />
+
+        <Grid>
+
+            <Button
+                x:Name="Exit"
+                Margin="0,10,0,-10"
+                HorizontalAlignment="Center"
+                Click="Exit_Click"
+                Content="Выход" />
+
+        </Grid>
+
+    </StackPanel>
+</Window>

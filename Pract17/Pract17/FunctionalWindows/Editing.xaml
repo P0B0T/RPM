@@ -1,0 +1,53 @@
+﻿<Window
+    x:Class="Pract17.FunctionalWindows.Editing"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Pract17.FunctionalWindows"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Редактирование записей"
+    Width="347"
+    Height="301"
+    Foreground="White"
+    Loaded="Window_Loaded"
+    ResizeMode="NoResize"
+    Style="{StaticResource WindowBackground}"
+    mc:Ignorable="d">
+
+    <StackPanel>
+
+        <Label Content="Введите ФИО:" />
+
+        <TextBox x:Name="ФИО_TextBox" />
+
+        <Label Content="Введите город:" />
+
+        <TextBox x:Name="Город_TextBox" />
+
+        <Label Content="Введите фамилию тренера:" />
+
+        <TextBox x:Name="ФамилияТренера_TextBox" />
+
+        <Label Content="Введите оценку:" />
+
+        <TextBox x:Name="Оценка_TextBox" />
+
+        <Grid>
+
+            <Button
+                x:Name="Add_button"
+                Margin="10,7,0,-7"
+                Click="Change_button_Click"
+                Content="Редактировать"
+                IsDefault="True" />
+
+            <Button
+                x:Name="Exit"
+                Margin="170,7,0,-7"
+                Click="Exit_Click"
+                Content="Отмена" />
+
+        </Grid>
+
+    </StackPanel>
+</Window>

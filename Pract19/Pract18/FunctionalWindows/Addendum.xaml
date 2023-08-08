@@ -1,0 +1,65 @@
+﻿<Window
+    x:Class="Pract18.FunctionalWindows.Addendum"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Pract18.FunctionalWindows"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Добавление записей"
+    Width="347"
+    Height="470"
+    Foreground="White"
+    ResizeMode="NoResize"
+    Style="{StaticResource WindowBackground}"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+
+    <StackPanel>
+
+        <Label Content="Введите название гостиницы:" />
+
+        <TextBox x:Name="Hotel_TextBox" />
+
+        <Label Content="Введите номер комнаты:" />
+
+        <TextBox x:Name="RoomNumber_TextBox" />
+
+        <Label Content="Введите количество мест в комнате:" />
+
+        <TextBox x:Name="NumberOfSeats_TextBox" />
+
+        <Label Content="Введите ФИО спортсмена:" />
+
+        <TextBox x:Name="AthleteSFullName_TextBox" />
+
+        <Label Content="Введите возрастную группу спортсмена:" />
+
+        <TextBox x:Name="AgeGroup_TextBox" />
+
+        <Label Content="Введите город:" />
+
+        <TextBox x:Name="City_TextBox" />
+
+        <Label Content="Введите вид спорта:" />
+
+        <TextBox x:Name="SportTipe_TextBox" />
+
+        <Grid>
+
+            <Button
+                x:Name="Add_button"
+                Margin="10,7,0,-7"
+                Click="Add_button_Click"
+                Content="Добавить"
+                IsDefault="True" />
+
+            <Button
+                x:Name="Exit"
+                Margin="170,7,0,-7"
+                Click="Exit_Click"
+                Content="Отмена" />
+
+        </Grid>
+
+    </StackPanel>
+</Window>

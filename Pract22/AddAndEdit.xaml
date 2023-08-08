@@ -1,0 +1,61 @@
+﻿<Window
+    x:Class="Pract22.AddAndEdit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Pract22"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="800"
+    Height="429"
+    Loaded="Window_Loaded"
+    ResizeMode="NoResize"
+    Style="{StaticResource WindowBackground}"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+
+    <Grid>
+
+        <Label
+            Margin="94,10,598,0"
+            VerticalAlignment="Top"
+            Content="Название:" />
+
+        <TextBox Name="Name" Margin="22,40,548,328" />
+
+        <Label
+            Margin="96,95,609,0"
+            VerticalAlignment="Top"
+            Content="Материк:" />
+
+        <TextBox Name="Mainland" Margin="22,125,548,243" />
+
+        <Label
+            Margin="96,180,609,0"
+            VerticalAlignment="Top"
+            Content="Столица:" />
+
+        <TextBox Name="Capital" Margin="22,210,548,158" />
+
+        <Label
+            Margin="50,265,565,0"
+            VerticalAlignment="Top"
+            Content="Количество жителей:" />
+
+        <TextBox Name="CountPeoples" Margin="22,295,548,73" />
+
+        <Image Name="PhotoCountry" Margin="291,22,31,130" />
+
+        <Button
+            Name="AddPhoto"
+            Margin="452,295,0,73"
+            Click="AddPhoto_Click"
+            Content="Добавить фото" />
+
+        <Button
+            Name="bAddOrEdit"
+            Margin="0,358,0,10"
+            HorizontalAlignment="Center" />
+
+    </Grid>
+
+</Window>

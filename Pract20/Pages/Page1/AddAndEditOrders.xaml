@@ -1,0 +1,85 @@
+﻿<Page
+    x:Class="Pract20.Pages.Page1.AddAndEditOrders"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Pract20.Pages.Page1"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignWidth="266.6"
+    Loaded="Page_Loaded"
+    Style="{StaticResource PageBackground}"
+    mc:Ignorable="d">
+
+    <StackPanel>
+
+        <Label Content="Дата заказа:" />
+
+        <TextBox x:Name="tbDate" />
+
+        <Label Content="Клиент:" />
+
+        <TextBox x:Name="tbClient" />
+
+        <Label Content="Марка автомобиля:" />
+
+        <TextBox x:Name="tbCarBrand" />
+
+        <TextBlock
+            Margin="5,0,0,0"
+            Foreground="White"
+            Text="Исполнителя, к которому относится эта информация:" />
+
+        <ComboBox
+            Name="cbPerformersOfWork"
+            Margin="0,10,0,10"
+            IsEditable="True"
+            IsReadOnly="True"
+            Text="Выберите исполнителя из списка"
+            ToolTip="Если нужного исполнителя нет, то добавьте запись в справочник &quot;Исполнители работ&quot;" />
+
+        <TextBlock
+            Margin="5,0,0,0"
+            Foreground="White"
+            Text="Название работы, к которой относится эта информация:" />
+
+        <ComboBox
+            Name="cbTypesOfWork"
+            Margin="0,10,0,10"
+            IsEditable="True"
+            IsReadOnly="True"
+            Text="Выберите название из списка"
+            ToolTip="Если нужного названия нет, то добавьте запись в справочник &quot;Виды работ&quot;" />
+
+        <Grid>
+
+            <Button
+                x:Name="bAddEdit"
+                Width="100"
+                Height="30"
+                Margin="30,0,0,0" />
+
+            <Button
+                x:Name="AddExt"
+                Width="100"
+                Height="30"
+                Margin="135,0,0,0"
+                Click="AddExt_Click"
+                ToolTip="Для отображения новых данных, перезагрузите это окно">
+
+                <Button.Content>
+
+                    <TextBlock
+                        FontSize="10"
+                        Text="Добавить записи в справочники"
+                        TextAlignment="Center"
+                        TextWrapping="Wrap" />
+
+                </Button.Content>
+
+            </Button>
+
+        </Grid>
+
+    </StackPanel>
+
+</Page>
